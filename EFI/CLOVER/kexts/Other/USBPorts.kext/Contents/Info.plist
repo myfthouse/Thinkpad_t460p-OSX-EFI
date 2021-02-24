@@ -28,12 +28,18 @@
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
 			<key>IOClass</key>
 			<string>AppleUSBHostMergeProperties</string>
-			<key>IONameMatch</key>
-			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
+				<key>kUSBSleepPortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBSleepPowerSupply</key>
+				<integer>2600</integer>
+				<key>kUSBWakePortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBWakePowerSupply</key>
+				<integer>3200</integer>
 				<key>port-count</key>
 				<data>
 				EwAAAA==
@@ -43,19 +49,28 @@
 					<key>HS01</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>0</integer>
 						<key>port</key>
 						<data>
 						AQAAAA==
 						</data>
 					</dict>
-					<key>HS05</key>
+					<key>HS02</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>255</integer>
+						<integer>0</integer>
 						<key>port</key>
 						<data>
-						BQAAAA==
+						AgAAAA==
+						</data>
+					</dict>
+					<key>HS04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>
+						BAAAAA==
 						</data>
 					</dict>
 					<key>HS06</key>
